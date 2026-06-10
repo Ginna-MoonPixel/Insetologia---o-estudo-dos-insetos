@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insetologia 🐛</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="bug-container">
+            <div class="flying-bug">🦋</div>
+        </div>
+        <h1>Insetologia</h1>
+        <p>O universo secreto dos insetos!</p>
+        <button id="theme-toggle">🌙 Modo Escuro</button>
+    </header>
+
+    <nav>
+        <a href="#galeria">Galeria</a>
+        <a href="#curiosidades">Curiosidades</a>
+        <a href="#quiz">Quiz Inseto</a>
+    </nav>
+
+    <section id="hero">
+        <h2>Bem-vindo ao mundo dos minúsculos gigantes!</h2>
+        <div class="hero-bugs">
+            <span>🐜</span><span>🐞</span><span>🦗</span><span>🕷️</span>
+        </div>
+    </section>
+
+    <section id="galeria" class="section">
+        <h2>Galeria de Insetos</h2>
+        <div class="gallery" id="gallery"></div>
+    </section>
+
+    <section id="curiosidades" class="section">
+        <h2>Curiosidades Incríveis</h2>
+        <div class="curiosities">
+            <div class="card"><h3>🐝 Abelhas</h3><p>Elas fazem a dança do requebrado para indicar onde está o néctar!</p></div>
+            <div class="card"><h3>🪲 Besouros</h3><p>O besouro Hércules é tão forte que consegue carregar 850 vezes seu peso.</p></div>
+            <div class="card"><h3>🦋 Borboletas</h3><p>Elas provam com as patas! Sim, os pés delas têm receptores de gosto.</p></div>
+        </div>
+    </section>
+
+    <section id="quiz" class="section">
+        <h2>Quiz: Quanto você sabe de insetos?</h2>
+        <div id="quiz-container">
+            <div id="question"></div>
+            <div id="options"></div>
+            <button id="next-btn" style="display:none;">Próxima Pergunta</button>
+            <p id="result"></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Feito com ❤️ e muitas perninhas por Grok • Para o GitHub Pages</p>
+    </footer>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">×</span>
+            <h2 id="modal-title"></h2>
+            <img id="modal-image" src="" alt="">
+            <p id="modal-desc"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
